@@ -1,0 +1,4 @@
+.gitattributes
+*.svg -crlf
+*.webmanifest -crlf
+
