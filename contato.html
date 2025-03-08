@@ -99,23 +99,24 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
-                    <h1 class="text-center mb-4">Contato</h1>
-                    <p class="text-center mb-4">Entre em contato conosco para tirar suas dúvidas ou para fazer seu pedido.</p>
+                    <h1 class="text-center mb-4" style="font-size: 2rem;">Contato</h1>
+                    <p class="text-center mb-4" style="font-size: 1.2rem;">Entre em contato conosco para tirar suas dúvidas ou para fazer seu pedido.</p>
                     <form class="p-4 border rounded shadow-sm">
-                        <div class="mb-4"> 
-                            <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control form-control-lg" id="nome" placeholder="Digite seu nome">
+                        <div class="form-floating mb3"> 
+                            <input type="text" class="form-control" autofocusid="txtNome" placeholder="">
+                            <label for="texNome">Nome Completo</label>            
                         </div>
-                        <div class="mb-4">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control form-control-lg" id="email" placeholder="Digite seu e-mail">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="txtEmail" placeholder="">
+                            <label for="txtEmail">E-mail</label>
                         </div>
-                        <div class="mb-4">
-                            <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea class="form-control form-control-lg" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="txtMensagem"
+                             placeholder="" style="height: 250px;"></textarea>
+                            <label for="txtMensagem">Mensagem</label>
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button type="submit" class="btn btn-danger btn-lg">Enviar</button> 
+                            <button type="button" onclick="window.location.href='/confirmacaoContato.html'" class="btn btn-danger btn-lg">Enviar</button> 
                             <button type="reset" class="btn btn-secondary btn-lg me-md-2">Limpar</button>
                                
                         </div>
